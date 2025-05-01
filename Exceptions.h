@@ -13,7 +13,7 @@ public:
     DuplicatePlayerException(const std::string &name) //runs the exception and shows player trying to be added
       : msg("Player already exists: " + name) {}
 
-    // Return the explanatory string
+    // Return the explanatory stringss
     const char* what() const noexcept override { //returns error message
         return msg.c_str();
     }
