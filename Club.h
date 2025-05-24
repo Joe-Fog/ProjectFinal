@@ -59,6 +59,21 @@ public:
             return nullptr;
         return it; // return pointer to the found player
     }
+
+    // ------------ helpers for League::saveFile() ------------
+    const  string&  getName()   const {
+        return name;
+    }
+    int getPlayerCount()    const {
+        return playerCount;
+    }
+    const Player&  getPlayer(int i) const {
+        return players[i];
+    }
+    const Record&  getRecord()  const {
+        return record;
+    }
+
 };
 
 #endif

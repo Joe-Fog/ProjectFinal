@@ -33,6 +33,10 @@ public:
     const Club& getClub(int i) const {
         return clubs[i];
     }
+    void saveFile(const string& filename) const;   // saving league details to a file
+
+    // Read the entire league (clubs, records, players) from a file
+    void loadFile(const string& filename);
 };
 
 #endif

@@ -212,6 +212,16 @@ int main() { //make league, clubs, and players
         cout << "Caught invalid_argument: " << e.what() << "\n";
     }
 
+    //-----------------------Save file-------------------------------------------------------------//
+    premierLeague.saveFile("league_full.txt");
+    cout << "League data saved to league_full.txt\n";
 
+    /*
+    //-----------------------Load File ------------------------------------------------------------//
+    League reloaded("Empty");
+    reloaded.loadFile("league_full.txt");
+    cout << "\n=== Reloaded league from file ===\n";
+    reloaded.displayLeague();
+*/
     return 0;
 }

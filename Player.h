@@ -46,6 +46,11 @@ public:
         return name;
     }
 
+    // ---- for saving to file ----
+    int  getGamesPlayed()        const { return gamesPlayed; }
+    int  getAssists()            const { return assists; }
+    double getWages()            const { return wages; }
+
     static int getPlayerCount(); // Returns the total number of players - static variable
 
      // Overloaded comparison operators to compare player's goals (1)

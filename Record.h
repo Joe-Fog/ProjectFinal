@@ -11,6 +11,8 @@ public:
     Record(); // Default constructor
     Record(int played, int trophies);
     void displayRecord() const;
+    int getMatchesPlayed() const { return matchesPlayed; }
+    int getTrophiesWon()   const { return trophiesWon;}
 };
 
 #endif
